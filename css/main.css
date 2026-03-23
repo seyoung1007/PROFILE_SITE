@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Orbitron:wght@400..900&family=Poiret+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+/* membwr1 배경색 */
+body.member1 {
+  background-color: #ebfaff;
+}
+body.member2 {
+  background-color: #2dffed;
+}
+body.member3 {
+  background-color: #ff2ddc24;
+}
+body.member4 {
+  background-color: #5b034d;
+}
+/* 프로필카드 전체영역 */
+section {
+  width: 390px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+/* 상단 메뉴 */
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu a {
+  color: #aaa;
+  font-size: 20px;
+}
+/* 프로필 영역 */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  padding: 20px 0;
+}
+/* 이미지 */
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 5px 15px 30px rgba(1, 169, 157, 0.8);
+}
+.member2 .profile-img {
+  box-shadow: 5px 15px 30px rgba(173, 230, 226, 0.8);
+}
+.member3 .profile-img {
+  box-shadow: 5px 15px 30px rgba(230, 173, 223, 0.8);
+}
+.member4 .profile-img {
+  box-shadow: 5px 15px 30px rgba(230, 173, 223, 0.925);
+}
+.profile-img img {
+  width: 100%;
+  transition: all 0.5s;
+}
+.profile-img:hover img {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+/* 이름 */
+.profile-text h1 {
+  font-size: 22px;
+  color: #555;
+  text-transform: uppercase;
+}
+.profile-text p {
+  font-size: 12px;
+  color: #9a9a9a;
+}
+.fa-facebook-f::before {
+  display: block;
+  width: 14px;
+}
+/* 더보기 버튼 */
+.btn-view {
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 24px;
+  background: linear-gradient(45deg, #10fcf0, #7592fc);
+  box-shadow: 5px 5px 20px rgba(0, 255, 255, 0.5);
+}
+.btn-view .member2 .profile-img {
+  background: linear-gradient(45deg, #10fcf0, #75b2fc);
+  box-shadow: 5px 5px 20px rgba(0, 255, 255, 0.5);
+}
+body.member2 .btn-view {
+  background: linear-gradient(45deg, #10fc96, #fc9075);
+  box-shadow: 5px 5px 20px rgba(0, 255, 255, 0.5);
+}
+body.member3 .profile-img {
+  background: linear-gradient(45deg, #a40389, #75b2fc);
+  box-shadow: 5px 5px 20px rgba(0, 255, 255, 0.5);
+}
+body.member3 .btn-view {
+  background: linear-gradient(45deg, #fc10ec, #fc75f3);
+  box-shadow: 5px 5px 20px rgba(0, 255, 255, 0.5);
+}
+body.member4 .profile-img {
+  background: linear-gradient(45deg, #a403894d, #75b2fc6b);
+  box-shadow: 5px 5px 20px rgba(0, 255, 255, 0.5);
+}
+body.member4 .btn-view {
+  background: linear-gradient(45deg, #10b5fc67, #fc75f348);
+  box-shadow: 5px 5px 20px rgba(0, 255, 255, 0.5);
+}
+/* 연락처 영역 */
+.link-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px;
+}
+.contact {
+  width: 200px;
+}
+.contact li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #d2d1d1;
+  padding: 10px 0;
+}
+.contact li:last-child {
+  border: none;
+}
+.contact li i {
+  font-size: 14px;
+  color: #666;
+
+  text-shadow: 2px 2px 2px #ddd;
+}
+.contact li span {
+  width: 160px;
+  font-size: 12px;
+  color: #777;
+  font-family: "Orbitron", sans-serif;
+}
+.fa-brands::before {
+  display: block;
+  font-size: 16px;
+}
+/* 멤버별 프로필 링크 만들기 */
+.others {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.others a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e8a9f3;
+  opacity: 0.4;
+  filter: saturate(0.7);
+}
+.others a:nth-of-type(1) {
+  background-color: #35e0f7;
+}
+.others a:nth-of-type(2) {
+  background-color: #55f5cd;
+}
+.others a:nth-of-type(3) {
+  background-color: #ff80df;
+}
+.others a:nth-of-type(4) {
+  background-color: #a794fd;
+}
+.others a.on {
+  opacity: 1;
+  filter: saturate(1);
+}
